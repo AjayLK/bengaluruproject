@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangaluru House Price Prediction</title>
+</head>
+
+<body style="background-color: rgb(212, 155, 200);">
+
+    <h1> Bangaluru House Price Prediction </h1>
+    <form method="POST" action="/house_price">
+
+        <label>Size:</label>
+        <select name = "size">
+            <option value = "1 BHK">1 BHK</option>
+            <option value = "2 BHK">2 BHK</option>
+            <option value = "3 BHK">3 BHK</option>
+            <option value = "4 BHK">4 BHK</option>
+            <option value = "5 BHK">5 BHK</option>
+            <option value = "6 BHK">6 BHK</option>
+            <option value = "7 BHK">7 BHK</option>
+            <option value = "8 BHK">8 BHK</option>
+            <option value = "9 BHK">9 BHK</option>
+            <option value = "10 BHK">10 BHK</option>
+            <option value = "11 BHK">11 BHK</option>
+            <option value = "13 BHK">13 BHK</option>
+            <option value = "14 BHK">14 BHK</option>
+            <option value = "16 BHK">16 BHK</option>
+            <option value = "19 BHK">19 BHK</option>
+            <option value = "27 BHK">27 BHK</option>
+            <option value = "1 Bedroom">1 Bedroom</option>
+            <option value = "2 Bedroom">2 Bedroom</option>
+            <option value = "3 Bedroom">3 Bedroom</option>
+            <option value = "4 Bedroom">4 Bedroom</option>
+            <option value = "5 Bedroom">5 Bedroom</option>
+            <option value = "6 Bedroom">6 Bedroom</option>
+            <option value = "7 Bedroom">7 Bedroom</option>
+            <option value = "8 Bedroom">8 Bedroom</option>
+            <option value = "9 Bedroom">9 Bedroom</option>
+            <option value = "10 Bedroom">10 Bedroom</option>
+            <option value = "11 Bedroom">11 Bedroom</option>
+            <option value = "12 Bedroom">12 Bedroom</option>
+            <option value = "18 Bedroom">18 Bedroom</option>
+            <option value = "43 Bedroom">43 Bedroom</option>
+            <option value = "1 RK">1 RK</option>
+            
+        </select>
+
+        <br>
+        <br>
+
+        <label>Bath:</label>
+        <input type = "text" name = "bath">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Balcony:</label>
+        <input type = "text" name = "balcony">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Area_type:</label>
+        <select name = "area_type">
+            <option value = "Built-up  Area">Built-up  Area</option>
+            <option value = "Carpet  Area">Carpet  Area</option>
+            <option value = "Plot  Area">Plot  Area</option>
+            <option value = "Super built-up  Area">Super built-up  Area</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>New_Total_sqft:</label>
+        <input type = "text" name = "new_total_sqft">
+        </select>
+
+           
+        </select>
+
+        
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>My Bangaluru House Price is <b> {{ prediction }} /- Lac.</b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
